@@ -8,5 +8,28 @@
 
     <modules>
         <module>mr-word-count</module>
+        <module>mr-string-reformat</module>
     </modules>
+
+    <properties>
+        <hadoop-core.version>1.2.1</hadoop-core.version>
+        <junit.version>4.12</junit.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.hadoop</groupId>
+                <artifactId>hadoop-core</artifactId>
+                <version>${hadoop-core.version}</version>
+            </dependency>
+            <!-- http://mvnrepository.com/artifact/junit/junit -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 </project>
