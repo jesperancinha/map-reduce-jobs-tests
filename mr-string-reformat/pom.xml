@@ -1,21 +1,21 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <parent>
         <artifactId>map-reduce-jobs-tests</artifactId>
         <groupId>steelzack</groupId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>pom.xml</relativePath>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>mr-string-reformat</artifactId>
 
     <properties>
         <maven-compiler-plugin.source>1.8</maven-compiler-plugin.source>
         <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
     </properties>
-
-    <artifactId>mr-word-count</artifactId>
 
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
