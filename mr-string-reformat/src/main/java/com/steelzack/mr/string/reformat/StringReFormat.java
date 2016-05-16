@@ -23,8 +23,7 @@ public class StringReFormat {
 
     public static class ReduceAllMessagesToFile extends Reducer<Text, Text, Text, Text> {
 
-
-        public void reduce(Text key, Iterable<Text> values, Reducer.Context context)
+        public void reduce(Text key, Iterable<Text> values, Reducer<Text, Text, Text, Text>.Context context)
                 throws IOException, InterruptedException {
 
             for (Text value : values) {
@@ -39,12 +38,12 @@ public class StringReFormat {
         private BufferedReader reader;
 
         @Override
-        public void map(Text key, Text value, Mapper.Context context)
+        public void map(Text key, Text value, Mapper<Text, Text, Text, Text>.Context context)
                 throws IOException, InterruptedException {
 
             final String inKey = key.toString();
             if (inKey.length() != 0) {
-                HashMap<String, String> linedoc = new HashMap<String, String>();
+                HashMap<String, String> linedoc = new HashMap<>();
                 reader = new BufferedReader(new FileReader(new File("/tmp/input.txt")));
                 String pattern;
                 while ((pattern = reader.readLine()) != null) {
