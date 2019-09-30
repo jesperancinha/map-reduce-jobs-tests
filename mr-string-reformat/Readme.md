@@ -1,4 +1,4 @@
-# map-reduce-jobs-tests
+# mr-string-reformat
 
 ## License
 

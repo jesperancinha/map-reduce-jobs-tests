@@ -1,4 +1,4 @@
-# map-reduce-jobs-tests
+# mr-word-count
 
 ## License
 
