@@ -13,7 +13,7 @@
 
     <properties>
         <hadoop-core.version>1.2.1</hadoop-core.version>
-        <junit.version>4.13.1</junit.version>
+        <junit.version>4.13.2</junit.version>
     </properties>
 
     <dependencyManagement>
